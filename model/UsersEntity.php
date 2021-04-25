@@ -11,7 +11,7 @@ class UsersEntity{
     public $usPic;
 
     public function __construct($usId,$usUsername,$usEmail,$usPassword,$usFirstName,$usSurname,$usPic){
-        $this->usId = $usI;
+        $this->usId = $usId;
         $this->usUsername = $usUsername;
         $this->usEmail = $usEmail;
         $this->usPassword = $usPassword;

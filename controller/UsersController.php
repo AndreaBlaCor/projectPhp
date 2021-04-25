@@ -12,9 +12,11 @@ class UsersController{
     public function invoke(){
                 
         include 'loginPage.php';
-    }
+    }   
 
-    public function checkUser(){
+    public function checkUser($email){
+        $user = $this->model->getUserByEmail($email);
+        return $user;
 
     }
 }

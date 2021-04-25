@@ -16,9 +16,9 @@ class UsersModel{
         $pdo = getConnectToDB();
         $query = "SELECT * FROM users WHERE email = '$email'";
         $sth = $pdo->query($query, PDO::FETCH_ASSOC) ;
-        $user = $sth->fetchAll();
+        $user = $sth->fetchAll();        
         $res = null;
-
+        $user = $user[0];
         if($user) {
             $res = new UsersEntity(
                 $user["id"], 
