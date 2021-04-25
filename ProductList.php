@@ -1,4 +1,4 @@
-<?php  include __DIR__."/../header.php"; ?>
+<?php  include __DIR__."/header.php"; ?>
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">               
@@ -98,4 +98,4 @@
                 </ul>
             </div>
         </section>            
-<?php include __DIR__."/../footer.php";?>
+<?php include __DIR__."/footer.php";?>

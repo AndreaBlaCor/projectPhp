@@ -10,8 +10,12 @@ class UsersController{
     }
 
     public function invoke(){
-        $users=$this->model->getUserList();
-        include 'layout/UserList.php;'
+                
+        include 'loginPage.php';
+    }
+
+    public function checkUser(){
+
     }
 }
 ?>

@@ -2,14 +2,18 @@
 include_once("ProductsEntity.php");
 include_once("dbConnect.php");
 
+
 class ProductsModel{
 
     public function getProductList(){
-        return array(
-            new ProductsEntity("01", "Amethist", "Purple", "50", ""),
-            new ProductsEntity("02", "Quarz", "Pink", "20", ""),
-            new ProductsEntity("03", "Lapiz Lazuri", "Azul", "550", "")
-        );
+        $pdo = getConnectToDB();
+        $query = "SELECT * FROM products";
+        $sth = $pdo->query($query, PDO::FETCH_ASSOC) ;
+        $products = $sth->fetchAll();
+        foreach($products as $product){
+            $res [] = new ProductsEntity($product['id'], $product['nombre'], $product['nombre'], $product['precio'], $product['imagen']  );
+        }
+        return $res;
     }
 }
 ?>

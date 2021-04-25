@@ -11,7 +11,7 @@ class ProductsController{
 
     public function invoke(){
         $products=$this->model->getProductList();
-        include 'layout/ProductList.php';
+        include 'ProductList.php';
     }
 }
 ?>
