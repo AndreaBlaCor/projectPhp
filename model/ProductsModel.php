@@ -1,5 +1,6 @@
 <?php
-include_once("model/ProductsEntity.php");
+include_once("ProductsEntity.php");
+include_once("dbConnect.php");
 
 class ProductsModel{
 
