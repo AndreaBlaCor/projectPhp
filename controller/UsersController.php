@@ -11,7 +11,7 @@ class UsersController{
 
     public function invoke(){
                 
-        include 'loginPage.php';
+        include 'layout/loginPage.php';
     }   
 
     public function checkUser($email){

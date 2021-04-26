@@ -9,7 +9,7 @@ function getConnectToDB() {
         return $pdo;
 
     }    catch (PDOException $pe) {
-        die("Could not connect to the database ". DB_NAME ." ". $pe->getMessage());
+        die("Could not connect to the database ". DB_SERVERNAME ." ". $pe->getMessage());
     }
 
 }

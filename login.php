@@ -1,25 +1,27 @@
 <?php
-   include_once("controller/UsersController.php");
-    
-    var_dump($_POST);
+    include_once("controller/UsersController.php");
 
-    if($_POST) {
-        $usersController = new UsersController();
-        $user = $usersController->checkUser($_POST['email']);
-        if($user){
-            //compruebo si la contraseña es igual
-            var_dump($user);
-            
-        } else
-        {
-            //el usuario no existe pongo mensaje de error y llamo de nuevo a login
-        }
+    $usersController = new UsersController();
 
-    }else
-    {
-        $usersController = new UsersController();
+    if(!$_POST) {                
         $usersController->invoke();
+        return;
     }
+   
+    $emailInput  = $_POST['email'];
+    $passInput = $_POST['password'];
+    $user = $usersController->checkUser($_POST['email']);
+    if($user){
+
+        //compruebo si la contraseña es igual
+        var_dump($user);
+        
+    } else
+    {
+        //el usuario no existe pongo mensaje de error y llamo de nuevo a login
+    }
+
+    
 
    
    

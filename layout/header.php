@@ -27,10 +27,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ml-auto">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Shop</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="login.php">Login</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.php">User List</a></li>                        
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.php#portfolio">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.php#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="login.php">Login</a></li>                                             
                     </ul>
                 </div>
             </div>
